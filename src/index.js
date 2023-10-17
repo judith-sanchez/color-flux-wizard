@@ -7,7 +7,7 @@ class ColorConverter {
 		if (
 			/^#([0-9A-Fa-f]{3}|[0-9A-Fa-f]{6})$/.test(this.color) ||
 			/^rgb\(\s*\d+\s*,\s*\d+\s*,\s*\d+\s*\)$/.test(this.color) ||
-			/^rgba\(\s*\d+\s*,\s*\d+\s*,\s*\d+\s*,\s*(0(\.\d+)?|1(\.0+)?)\s*\)$/.test(
+			/^rgba\(\s*\d+\s*,\s*\d+\s*,\s*\d+\s*,\s*(1|0(\.\d+)?)\s*\)$/.test(
 				this.color,
 			)
 		) {
@@ -77,6 +77,7 @@ class ColorConverter {
 	}
 
 	displayColors() {
+		// console.log(this.color);
 		if (this.validateColorFormat()) {
 			const colorFormat = this.identifyColorFormat();
 			console.log(`Identified color format: ${colorFormat}`);
@@ -93,6 +94,15 @@ class ColorConverter {
 }
 
 module.exports = ColorConverter;
+
+const testHEX = new ColorConverter('#681F83');
+testHEX.displayColors();
+
+const testRGB = new ColorConverter('rgb(104, 31, 131)');
+testRGB.displayColors();
+
+const testRGBA = new ColorConverter('rgba(104, 31, 131, 1)');
+testRGBA.displayColors();
 
 /* 
 // Test Cases

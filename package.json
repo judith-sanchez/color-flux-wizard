@@ -20,5 +20,8 @@
 	"bin": {
 		"color-flux-wizard": "./bin/global.js"
 	},
-	"preferGlobal": true
+	"preferGlobal": true,
+	"dependencies": {
+		"g": "^2.0.1"
+	}
 }

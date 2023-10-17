@@ -1,0 +1,20 @@
+{
+	"name": "color-flux-wizard",
+	"version": "1.0.0",
+	"description": "Convert Hex to RGB and back with enchanting ease! Your digital color sorcery solution. 🪄✨🎩 #MagicColors",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/judith-sanchez/color-flux-wizard.git"
+	},
+	"keywords": [],
+	"author": "Judith Sanchez <judith.sanchez@toptal.com>",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/judith-sanchez/color-flux-wizard/issues"
+	},
+	"homepage": "https://github.com/judith-sanchez/color-flux-wizard#readme"
+}

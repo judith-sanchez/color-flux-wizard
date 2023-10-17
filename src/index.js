@@ -92,7 +92,58 @@ class ColorConverter {
 	}
 }
 
-// module.exports = ColorConverter;
+module.exports = ColorConverter;
 
-const colorFluxWizard = new ColorConverter('#FFFFFF');
-colorFluxWizard.displayColors();
+/* 
+// Test Cases
+
+// Hex to RGB Conversion
+const hexToRgb1 = new ColorConverter('#FFA500');
+hexToRgb1.displayColors(); // Should convert to RGB: rgb(255, 165, 0)
+
+const hexToRgb2 = new ColorConverter('#ABC');
+hexToRgb2.displayColors(); // Should convert to RGB: rgb(170, 187, 204)
+
+const hexToRgb3 = new ColorConverter('#00FF00');
+hexToRgb3.displayColors(); // Should convert to RGB: rgb(0, 255, 0)
+
+// RGB to Hex Conversion
+const rgbToHex1 = new ColorConverter('rgb(255, 165, 0)');
+rgbToHex1.displayColors(); // Should convert to Hex: #FFA500
+
+const rgbToHex2 = new ColorConverter('rgb(0, 255, 0)');
+rgbToHex2.displayColors(); // Should convert to Hex: #00FF00
+
+const rgbToHex3 = new ColorConverter('rgb(100, 100, 100)');
+rgbToHex3.displayColors(); // Should convert to Hex: #646464
+
+// Hex to RGBA Conversion
+const hexToRgba1 = new ColorConverter('#FFA500');
+hexToRgba1.displayColors(); // Should convert to RGBA: rgba(255, 165, 0, 1)
+
+const hexToRgba2 = new ColorConverter('#ABC');
+hexToRgba2.displayColors(); // Should convert to RGBA: rgba(170, 187, 204, 1)
+
+const hexToRgba3 = new ColorConverter('#00FF00');
+hexToRgba3.displayColors(); // Should convert to RGBA: rgba(0, 255, 0, 1)
+
+// RGB to RGBA Conversion
+const rgbToRgba1 = new ColorConverter('rgb(255, 165, 0)');
+rgbToRgba1.displayColors(); // Should convert to RGBA: rgba(255, 165, 0, 1)
+
+const rgbToRgba2 = new ColorConverter('rgb(0, 255, 0)');
+rgbToRgba2.displayColors(); // Should convert to RGBA: rgba(0, 255, 0, 1)
+
+const rgbToRgba3 = new ColorConverter('rgb(100, 100, 100)');
+rgbToRgba3.displayColors(); // Should convert to RGBA: rgba(100, 100, 100, 1)
+
+// RGBA to Hex Conversion
+const rgbaToHex1 = new ColorConverter('rgba(255, 165, 0, 0.5)');
+rgbaToHex1.displayColors(); // Should convert to Hex: #FFA500
+
+const rgbaToHex2 = new ColorConverter('rgba(0, 255, 0, 0.75)');
+rgbaToHex2.displayColors(); // Should convert to Hex: #00FF00
+
+const rgbaToHex3 = new ColorConverter('rgba(100, 100, 100, 0.2)');
+rgbaToHex3.displayColors(); // Should convert to Hex: #646464
+ */
